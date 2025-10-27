@@ -2,9 +2,9 @@
 
 ## Multi-platform builder of Docker
 
-···
+```
 docker buildx create --name multi-platform --use --platform linux/amd64,linux/arm64,linux/arm/v7 --driver docker-container
-···
+```
 
 ## Run on port 54
 
