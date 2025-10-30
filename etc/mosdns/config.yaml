@@ -1,7 +1,7 @@
 # EasyMosdns v3.5(Final Release)
 # https://apad.pro/easymosdns
 log:
-    level: debug
+    level: info
 
 data_providers:
   - tag: chinalist
@@ -244,8 +244,8 @@ plugins:
     type: fast_forward
     args:
       upstream:
-        - addr: "tcp://208.67.220.220:5353"
-          enable_pipeline: true
+        # - addr: "tcp://208.67.220.220:5353"
+        #   enable_pipeline: true
           #socks5: "127.0.0.1:1080"
         - addr: "udpme://8.8.8.8"
 
