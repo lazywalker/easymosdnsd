@@ -3,13 +3,15 @@ LABEL maintainer="Michael BD7MQB <bd7mqb@qq.com>"
 
 ARG TARGETPLATFORM
 RUN apk update
-RUN apk --no-cache add curl
+RUN apk --no-cache add curl tzdata
 
 ADD /etc/mosdns /etc/mosdns
 ADD /entrypoint.sh /app/entrypoint.sh
 ADD /bin/$TARGETPLATFORM/mosdns /app/mosdns
-RUN mv /etc/mosdns/rules/update-cdn /etc/periodic/daily/update-cdn && chmod +x /etc/periodic/daily/update-cdn
+RUN chmod +x /etc/mosdns/rules/update-cdn && \
+    ln -s /etc/mosdns/rules/update-cdn /etc/periodic/daily/update-cdn
 
+ENV TZ=Asia/Shanghai
 WORKDIR /app
 
 EXPOSE 53/tcp 53/udp

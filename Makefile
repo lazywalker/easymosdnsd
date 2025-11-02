@@ -8,3 +8,7 @@ push:
 
 buildx:
 	docker buildx build --platform ${PLATFORM} -t lazywalker/easymosdnsd:${VER} --push .
+
+local:
+	docker buildx build --platform linux/arm/v7 --output=type=docker -t easymosdnsd .
+	docker save easymosdnsd > easymosdnsd.tar
