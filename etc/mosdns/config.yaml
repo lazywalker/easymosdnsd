@@ -2,6 +2,8 @@
 # https://apad.pro/easymosdns
 log:
     level: info
+    production: true
+    omit_time: false
 
 data_providers:
   - tag: chinalist
