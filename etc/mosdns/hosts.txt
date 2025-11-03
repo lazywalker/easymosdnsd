@@ -3,3 +3,4 @@
 localhost 127.0.0.1
 github.com 140.82.114.4
 nodeload.github.com 4.225.11.198
+10.100.100.13 m9527.dscloud.mobi
