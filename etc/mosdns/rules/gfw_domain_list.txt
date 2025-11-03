@@ -8126,6 +8126,7 @@ dlib.eastview.com
 dl-iphone.com
 dlive.tv
 dl-laby.jp
+dln1.ncdn.ec
 dls.ac.uk
 dlsite.com
 dlsite.com.tw
@@ -14315,6 +14316,7 @@ imkev.com
 imlab.ac.uk
 imlive.co
 imlive.com
+immersivetranslate.com
 immidio.com
 immigration.gov.tw
 immoral.jp
@@ -15504,6 +15506,7 @@ joinclubhouse.com
 joinmaidez.com
 joinmastodon.org
 joinside.org
+joinsquad.com
 joinup.ac.uk
 jokerlu1.cc
 jokerlu1.info
@@ -20422,6 +20425,8 @@ officialheadphone.com
 offresspecialesbmw.ca
 offrezdesipods.com
 offshorerenewables.ac.uk
+offworldindustries.com
+offworldindustries.net
 ofile.org
 ofs.ac.uk
 ogakikyoritsu.co.jp
@@ -23893,6 +23898,7 @@ senss-dtp.ac.uk
 sensualgirls.org
 sensualmothers.com
 sensueel.net
+sentry.io
 senzuritv.net
 sepnet.ac.uk
 seqing.one
@@ -26160,6 +26166,7 @@ telri.ac.uk
 temenos.ac.uk
 temetube.xyz
 tempusuk.ac.uk
+temu.com
 tenacy.com
 tenbyfotolia.com
 tencent.co.id

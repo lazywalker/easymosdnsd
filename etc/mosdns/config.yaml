@@ -12,6 +12,9 @@ data_providers:
   - tag: gfwlist
     file: ./rules/gfw_domain_list.txt
     auto_reload: true
+  - tag: applecn
+    file: ./rules/apple_cn.txt
+    auto_reload: true
   - tag: cdncn
     file: ./rules/cdn_domain_list.txt
     auto_reload: true
@@ -184,6 +187,13 @@ plugins:
       domain:
         - "provider:chinalist"
 
+  # 匹配apple cn域名的插件
+  - tag: query_is_applecn_domain
+    type: query_matcher
+    args:
+      domain:
+        - "provider:applecn"
+
   # 匹配污染域名的插件
   - tag: query_is_non_local_domain
     type: query_matcher
@@ -337,7 +347,7 @@ plugins:
             - _return
 
         # 已知的本地域名或CDN域名用本地服务器解析
-        - if: "(query_is_local_domain) || (query_is_cdn_cn_domain)"
+        - if: "(query_is_local_domain) || (query_is_cdn_cn_domain) || (query_is_applecn_domain)"
           exec:
             # 默认用本地服务器
             - forward_local
